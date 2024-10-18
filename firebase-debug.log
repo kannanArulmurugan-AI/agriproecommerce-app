@@ -1,0 +1,141 @@
+[debug] [2024-10-18T10:20:06.120Z] ----------------------------------------------------------------------
+[debug] [2024-10-18T10:20:06.128Z] Command:       /usr/bin/node /usr/local/bin/firebase init
+[debug] [2024-10-18T10:20:06.129Z] CLI Version:   13.22.0
+[debug] [2024-10-18T10:20:06.131Z] Platform:      linux
+[debug] [2024-10-18T10:20:06.132Z] Node Version:  v18.19.1
+[debug] [2024-10-18T10:20:06.133Z] Time:          Fri Oct 18 2024 15:50:06 GMT+0530 (India Standard Time)
+[debug] [2024-10-18T10:20:06.135Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-18T10:20:06.144Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-18T10:20:06.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-18T10:20:06.253Z] > authorizing via signed-in user (kannanarulmuruganwork@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/arulmurugan/agriproecommerce-app
+
+[debug] [2024-10-18T10:20:07.287Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-10-18T10:20:07.291Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-10-18T10:20:25.356Z] Checked if tokens are valid: false, expires at: 1729089828608
+[debug] [2024-10-18T10:20:25.358Z] Checked if tokens are valid: false, expires at: 1729089828608
+[debug] [2024-10-18T10:20:25.362Z] > refreshing access token with scopes: []
+[debug] [2024-10-18T10:20:25.374Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-18T10:20:25.374Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-18T10:20:25.682Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-10-18T10:20:25.683Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-18T10:20:25.783Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-10-18T10:20:26.732Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-10-18T10:20:26.732Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project agriproecommerce-app (agriproecommerce-app) 
+[info] 
+=== Dataconnect Setup
+[debug] [2024-10-18T10:20:30.193Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:30.193Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:30.194Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/agriproecommerce-app/billingInfo [none]
+[debug] [2024-10-18T10:20:32.052Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/agriproecommerce-app/billingInfo 200
+[debug] [2024-10-18T10:20:32.052Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/agriproecommerce-app/billingInfo {"name":"projects/agriproecommerce-app/billingInfo","projectId":"agriproecommerce-app","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2024-10-18T10:20:32.055Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:32.055Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:32.056Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com [none]
+[debug] [2024-10-18T10:20:32.056Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com x-goog-quota-user=projects/agriproecommerce-app
+[debug] [2024-10-18T10:20:33.897Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com 200
+[debug] [2024-10-18T10:20:33.899Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2024-10-18T10:20:33.902Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:33.903Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:33.903Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com:enable [none]
+[debug] [2024-10-18T10:20:33.903Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/agriproecommerce-app
+[debug] [2024-10-18T10:20:35.737Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com:enable 200
+[debug] [2024-10-18T10:20:35.738Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2024-10-18T10:20:45.746Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:45.746Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:20:45.747Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com [none]
+[debug] [2024-10-18T10:20:45.748Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com x-goog-quota-user=projects/agriproecommerce-app
+[debug] [2024-10-18T10:20:47.414Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com 200
+[debug] [2024-10-18T10:20:47.415Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/sqladmin.googleapis.com [omitted]
+[info] ✔  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] ✔  Wrote dataconnect/dataconnect.yaml 
+[info] ✔  Wrote dataconnect/schema/schema.gql 
+[info] ✔  Wrote dataconnect/connector/connector.yaml 
+[info] ✔  Wrote dataconnect/connector/queries.gql 
+[info] ✔  Wrote dataconnect/connector/mutations.gql 
+[info] ✔  Detected WEB app in directory /home/arulmurugan/agriproecommerce-app 
+[info] i  Wrote new config to /home/arulmurugan/agriproecommerce-app/dataconnect/connector/connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-1.5.0... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-1.5.0..."}}
+[debug] [2024-10-18T10:21:12.580Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-v1.5.0 
+[debug] [2024-10-18T10:21:13.423Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-v1.5.0 200
+[debug] [2024-10-18T10:21:13.424Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-v1.5.0 [stream]
+[info] I1018 15:51:29.421282   41471 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/home/arulmurugan/agriproecommerce-app/dataconnect-generated/js/default-connector"
+I1018 15:51:29.422739   41471 generate.go:40] Generated all sources. Writing them to disk...
+I1018 15:51:29.423515   41471 collector.go:107] connector "default" javascriptSdk wrote into "/home/arulmurugan/agriproecommerce-app/dataconnect-generated/js/default-connector"
+Generated sources: package.json [623B] index.d.ts [264B] esm/index.esm.js [193B] esm/package.json [17B] index.cjs.js [234B] 
+I1018 15:51:29.629693   41471 installsdk.go:76] Running command: /usr/bin/npm install file:dataconnect-generated/js/default-connector
+
+[info] i  Generated SDK code for default 
+[info] ✔  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/agriproecommerce-app/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2024-10-18T10:22:29.447Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:22:29.447Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:22:29.448Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/firestore.googleapis.com [none]
+[debug] [2024-10-18T10:22:29.448Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/firestore.googleapis.com x-goog-quota-user=projects/agriproecommerce-app
+[debug] [2024-10-18T10:22:31.255Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/firestore.googleapis.com 200
+[debug] [2024-10-18T10:22:31.256Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/agriproecommerce-app/services/firestore.googleapis.com [omitted]
+[debug] [2024-10-18T10:22:31.257Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:22:31.260Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:22:31.261Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/agriproecommerce-app/databases/(default) [none]
+[debug] [2024-10-18T10:22:31.856Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/agriproecommerce-app/databases/(default) 200
+[debug] [2024-10-18T10:22:31.858Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/agriproecommerce-app/databases/(default) {"name":"projects/agriproecommerce-app/databases/(default)","uid":"6f324ab6-6910-4f91-b2aa-4ffd1a8b0e6c","createTime":"2024-10-18T08:43:25.220587Z","updateTime":"2024-10-18T08:43:25.220587Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-10-18T09:22:31.831942Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IN3uq/Lal4kDMOvF497El4kD"}
+[debug] [2024-10-18T10:22:31.858Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-10-18T10:22:31.858Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-10-18T10:22:31.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-18T10:22:31.861Z] > authorizing via signed-in user (kannanarulmuruganwork@gmail.com)
+[debug] [2024-10-18T10:22:31.861Z] [iam] checking project agriproecommerce-app for permissions ["firebase.projects.get"]
+[debug] [2024-10-18T10:22:31.863Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:22:31.863Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:22:31.863Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/agriproecommerce-app:testIamPermissions [none]
+[debug] [2024-10-18T10:22:31.864Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/agriproecommerce-app:testIamPermissions x-goog-quota-user=projects/agriproecommerce-app
+[debug] [2024-10-18T10:22:31.864Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agriproecommerce-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-18T10:22:33.491Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/agriproecommerce-app:testIamPermissions 200
+[debug] [2024-10-18T10:22:33.492Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agriproecommerce-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-10-18T10:46:53.703Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:46:54.311Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:46:54.720Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/agriproecommerce-app/releases pageSize=10&pageToken=
+[debug] [2024-10-18T10:47:00.091Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/agriproecommerce-app/releases 200
+[debug] [2024-10-18T10:47:00.092Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/agriproecommerce-app/releases {"releases":[{"name":"projects/agriproecommerce-app/releases/cloud.firestore","rulesetName":"projects/agriproecommerce-app/rulesets/fc49a5e8-4ff5-4222-a4c8-1ae2e0f5a9cd","createTime":"2024-10-18T08:43:35.536851Z","updateTime":"2024-10-18T08:43:35.536851Z"}]}
+[debug] [2024-10-18T10:47:00.113Z] Found ruleset: projects/agriproecommerce-app/rulesets/fc49a5e8-4ff5-4222-a4c8-1ae2e0f5a9cd
+[debug] [2024-10-18T10:47:00.294Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:47:00.294Z] Checked if tokens are valid: true, expires at: 1729250424683
+[debug] [2024-10-18T10:47:00.470Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/agriproecommerce-app/rulesets/fc49a5e8-4ff5-4222-a4c8-1ae2e0f5a9cd [none]
+[debug] [2024-10-18T10:47:02.466Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/agriproecommerce-app/rulesets/fc49a5e8-4ff5-4222-a4c8-1ae2e0f5a9cd 200
+[debug] [2024-10-18T10:47:02.466Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/agriproecommerce-app/rulesets/fc49a5e8-4ff5-4222-a4c8-1ae2e0f5a9cd [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
